@@ -12,7 +12,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const router = require('./routes/router');
 
 const app = express();
-const db = 'mongodb://localhost:27017/ftdb'
+const db = 'mongodb://localhost:27017/ftd'
 
 mongoose.connect(process.env.MONGODB_URI || db, { useMongoClient: true }, () => {
     console.log('Connected to MongoDB.');
