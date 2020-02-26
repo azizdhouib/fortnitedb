@@ -20,6 +20,7 @@
 project = 'vittascience'
 copyright = '2020, aziz dhouib'
 author = 'aziz dhouib'
+master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
