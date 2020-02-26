@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started &#8212; vittascience 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to vittascience’s documentation!" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="to-get-the-right-tools">
+<h2>To get the right tools<a class="headerlink" href="#to-get-the-right-tools" title="Permalink to this headline">¶</a></h2>
+<p>Welcome in the team !</p>
+<p>We’re using several tools to facilitate teamwork,there are the steps to follow to be up-to-date and ready to work :) .</p>
+<p>Wi-fi
+You need to go on the entrance to get a log-in and password, the process is explained there.</p>
+<p>Email &#64;vittascience.com
+You will receive an Vittascience email account on the shape <a class="reference external" href="mailto:first-name&#37;&#52;&#48;vittascience&#46;com">first-name<span>&#64;</span>vittascience<span>&#46;</span>com</a>, who will be needed for the nexts steps.</p>
+<p>Email manager
+We recommend Thunderbird to manage with IMAP all the adresses <a class="reference external" href="mailto:first_name&#37;&#52;&#48;vittascience&#46;com">first_name<span>&#64;</span>vittascience<span>&#46;</span>com</a> as well as your personnal adresses. Beside the good point of having an unified interface, the searching tool become priceless when you don’t know on which adresses you got an answer.</p>
+<p>If needed, the email can be managed from OVH Mail ,with one of the three online managers RoundCube, Horde ou SquirelMail. We recommend RoundCube, who has the best easy-to-use/deepness ratio The Horde interface is awfull but is more moddable, and SquirelMail is simpler but poorer.</p>
+<p>Intern communication
+Slack is our intern communicational tool. You can access our group with your adress <a class="reference external" href="mailto:first-name&#37;&#52;&#48;vittascience&#46;com">first-name<span>&#64;</span>vittascience<span>&#46;</span>com</a>, by clicking this link : <a class="reference external" href="https://vittascience.slack.com/signup">https://vittascience.slack.com/signup</a></p>
+<p>Task manager
+We use Trello to manage the tasks as an interactive board. You can sign in on Trello to access the Main Board by clicking on this invitation .
+If it don’t work, ask an invitation to access to the Main Board.</p>
+<p>Planning
+To learn the agendas of everyone, we maintain an Google Calendar “Vittascience”. Ask an invitation to access the calendar.</p>
+<p>Folders and files
+All non-coding files and folders are saved on the [Google Drive Vittascience(<a class="reference external" href="https://drive.google.com/drive/folders/0B5UXaLEtjB9_dnUwa184R2tqR0U">https://drive.google.com/drive/folders/0B5UXaLEtjB9_dnUwa184R2tqR0U</a>) . We give reading rights to everyone, and writing rights on demand.</p>
+<p>Some advice, download the software “Sauvegarde et synchronisation” who allow to manage the Drive’s files locally on your computer.</p>
+<p>Website hosting
+OVH is our site’s host and give us access to the domain names vittascience.com and vittascience.org. Our compilation server for IDE and the backup saves are hosted there too.</p>
+<p>Administrator rights
+To have access on the website’s dashboard, ask to another administrator</p>
+<p>Accounting
+The acounting is managed by the office GMBA, with the software QuickBooks .</p>
+<p>Formerly, on OneUp and on this GoogleSheet.</p>
+<p>CRM
+Commercials contacts are groupped on Google Sheet.</p>
+<p>Formerely, on HubSpot , free CRM (Customer Relationship Management).</p>
+<p>== Emailing et Newsletter == We are actualy using MailerLite and MailChimp, free below 2000 destinataires per month.</p>
+</div>
+<div class="section" id="setup-project-environment">
+<h2>Setup project environment<a class="headerlink" href="#setup-project-environment" title="Permalink to this headline">¶</a></h2>
+<p>Congratulations you were given access to our project’s code base!</p>
+<p>To start contributing to Vittascience project you need to clone this repository. To build and launch a local version of Vittascience platform on your browser. First start with environment and project setup.</p>
+<p>Environment
+In section we will see how we can setup a virtual host for both Windows and Linux.</p>
+<p>Windows
+Set a virtual host :</p>
+<p>Install wamp</p>
+<p>Launch it</p>
+<p>On localhost page, click “Tools –&gt; Add a virtualhost”</p>
+<p>Name : “vittascience”</p>
+<p>Path : your path (C:/wamp/www/vittascience for example, be carefull to use frontslash and not backslash)</p>
+<p>Validate</p>
+<p>Right-click wamp tooltip–&gt;Tools–&gt;Restart DNS</p>
+<p>When you get on localhost again, choose your virtual host</p>
+<p>Linux (ubuntu)
+Install apache2</p>
+<blockquote>
+<div><p>sudo apt-get update
+sudo apt-get install apache2</p>
+</div></blockquote>
+<p>The first step that we are going to take is to make a directory structure that will hold the site data.</p>
+<blockquote>
+<div><p>sudo mkdir -p /var/www/vittascience</p>
+</div></blockquote>
+<p>Make sure permissions are granted for user not only for root.</p>
+<blockquote>
+<div><p>sudo chown -R $USER:$USER /var/www/vittascience
+sudo chmod -R 755 /var/www</p>
+</div></blockquote>
+<p>Create new Virtual Host files, Virtual Host files are the files that specify the actual configuration of our virtual hosts and dictate how the Apache web server will respond to various domain requests.</p>
+<blockquote>
+<div><p>sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/vittascience.conf</p>
+</div></blockquote>
+<p>Open the new file in your editor with root privileges:</p>
+<blockquote>
+<div><p>sudo nano /etc/apache2/sites-available/vittascience.conf</p>
+</div></blockquote>
+<p>Delete all the content, and copy paste the following.</p>
+<blockquote>
+<div><dl>
+<dt>&lt;VirtualHost <a href="#id1"><span class="problematic" id="id2">*</span></a>:80&gt;</dt><dd><p>ServerName vittascience
+DocumentRoot /var/www/vittascience/
+&lt;Directory  /var/www/vittascience/&gt;</p>
+<blockquote>
+<div><p>Options Indexes FollowSymLinks
+AllowOverride All
+Require all granted</p>
+</div></blockquote>
+<p>&lt;/Directory&gt;</p>
+</dd>
+</dl>
+<p>&lt;/VirtualHost&gt;</p>
+</div></blockquote>
+<p>Now that we have created our virtual host files, we must enable them. Apache includes some tools that allow us to do this.</p>
+<p>We can use the a2ensite tool to enable each of our sites like this:</p>
+<blockquote>
+<div><p>sudo a2ensite vittascience</p>
+</div></blockquote>
+<p>Restart Apache</p>
+<blockquote>
+<div><p>sudo service apache2 restart</p>
+</div></blockquote>
+<p>Project
+Clone the latest version of our application using git clone <a class="reference external" href="https://github.com/Leobriand31/vittascience">https://github.com/Leobriand31/vittascience</a>.</p>
+<p>Make a private folder and create db_config.php under it.</p>
+<p>mkdir private</p>
+<p>cd private/</p>
+<p>touch db_config.php</p>
+<p>Open db_config.php and paste the following while changing with your own parameters.</p>
+<p>define(“VS_DB_HOST”,”vittascience”); define(“VS_DB_PORT”,”3306”); define(“VS_DB_NAME”,”vittascience”); define(“VS_DB_USER”,”root”); define(“VS_DB_PWD”,””);</p>
+<p>Create a googlecaptchakey.php file in the same directory and paste the following code :
+define(“CAPTCHA_SECRET”,”6LePcG8UAAAAAOg-S1Lhx8k1HGk7HN5gvG1eJNeZ”); define(“CAPTCHA_PUBLIC_KEY”,”6LePcG8UAAAAAKX0zhtg86adz_ABg_d-n_EN4VFz”);</p>
+<p>Create a private.pem file in the same directory and paste the following code :
+—–BEGIN RSA PRIVATE KEY—– MIIEpAIBAAKCAQEAs4Y8UQKIuXnIR3yMWSIjWWhHrIv6+xzAChrQ/pJKcgTljoIV 5+74N8fQVhbPQ5hp1x491zVbcJ2VJnWSHj+wBHrq/au5gEjWSyV9tdl+s5OZTRfO Od9kS66WNnFh9MwdISIxy7HBlz3/GpQWitX5eAOYx2AqTBZQRSCD301aNRM3xCaC MPVnIp80G/ojTuCoKbJzynXV9wSfQXbbGFtZ3yQvAX0e8SKIfgZL0SgIWpb9aeoh F0JfNquEWP38ZaU4IqsvAK1B0TmmxJ4Ux0kKpQk+HRpJx96EEx05V9KsJ9wAeMJT Rc27sDfv6LEW3ooC6l5ybLTuEIQNjQVpFT1p6QIDAQABAoIBAF4vS8+4g6DDWqbe mgddWKxcgFXvLqK1566leQZGG9aL6R+F8hY3knQ5WX0BBIZTHRwmGo2gybNgiVKf FiTWhvMixcyGXpEGJZ9RMQ3J6KYwBpqipahJIiZulxJDFABJYfLzLKrQPF+rv/3i uZznO7WSNYJMWoSGpGBP+b+apnv3EtId34XT2zYLQ+aGa3tcxXqHSd0zuodDMOO1 mc47g07WqMSaEpi+8Ii9FPkU0NyCDOHjFHVA4Cf04MTLblcgrCuL4uciBh3qQSf7 6Ryte8VIjt5DYidGfKoK6nVlBYDLar6me+S5uIYW2dw5r5O8Cg7Hp91FdcQc2Saa PKNMvO0CgYEA42HvJvk6dvbOhx7pJrM92IKNiiPTZq75UpSz2nuIcXoXif8bKio0 fmL5L1pgh7OdkHxziBcSY2dWHV+UrzrYFdLAngmGyO0VH1ZSqkOUA3a1Bqr65HEE MM3YjmIOEawOcZ9i0yrU9K2Pw8oSiFaHeXhNcexnMQ9wYX//HEkbV0cCgYEAyh5a OBHMwUt2a9tExyK9qTOwHJE7SyutwKtuyhzLoSVO8U1DfM71p3g0iZeQR4cUCld3 OHOx716hVXrMZot9Ln3PZs8DDUvPxqJeQpCVX6xGeJLBK2DXCOh0i916IGDMb+mS pbBawkL0LUIZyhPcwoCJBO6MH8t4ybm2rPPaLU8CgYEAz6MwxkA0uUnrkswRUHvB cCLXqVvJwizqFBUin9LK6AT71dIVNk3QHdG3hxxapdDJg5WB0rZu3kMRCkWr+tAb XuJTbn14jaah8Tncxwpq8TbHXE1qSo1BrGds56h2/IBHuE456mdkjAKqE7pFbibG E5Bd+DhOiyh0ETTW+zdvNiUCgYB6wpavaXhAitIBTmtmu94QL9mucDNgQ8ZDuJwQ 3A598MgS3Ye4/YbM0cCvNUQnfY6ZfWhm/DY9me9JmM0fF2fP3hAjdGZ5I+utzJ6N tX1UX7FpuFDlROs2eOGYtctgcQqainZMdmGZjcr61iQNzaSO6jzOpwiqow3ZEBg4 0d9ZFwKBgQDUcrfqS7zkd+xE3fCKq8kasqgfFkXQ/X8iyA07xa86IY0kOApBx5h2 ZBVWM9BnPHKaBAuwivGti4Pfo8kQ12+YymQyKks8QEQ/HP1FKlQGrUCkrv9lqku/ sZu3D4ZUta9j2pmqfJTuvZ8CKVa7giAGNl0SpKbLJqsK7Ln7MlB5tw== —–END RSA PRIVATE KEY—–</p>
+<p>Create a new database “vittascience” and import the database from the [sql file] (<a class="reference external" href="https://app.slack.com/client/T51BTV197/GSSRRMJTZ">https://app.slack.com/client/T51BTV197/GSSRRMJTZ</a>) through Phpmyadmin (Login “root” mdp “” or other)</p>
+<p>Make sure in your php.ini that upload_max_filesize, memory_limit and post_max_size are set higher than the database file’s size</p>
+<p>Go to namespace architecture to build metadata.json &amp; db.json (for each namespace)</p>
+<p>Follow the How to bypasss guide to have an effective account on localhost. <a class="reference external" href="mailto:contact&#37;&#52;&#48;vittascience&#46;com">contact<span>&#64;</span>vittascience<span>&#46;</span>com</a> is an admin account, you can do the same with a normal or a teacher acccount if needed.</p>
+<p>Translation
+As for now, the language system does not work on localhost. To change the language, the language cookie should be changed by hand : application -&gt; Cookie -&gt; <a class="reference external" href="http://vittascience/">http://vittascience/</a> -&gt; lng</p>
+<p>Gulp
+Gulp is a toolkit to enhance our workflow and allow us to have a better website for production. With Gulp, we concat and compress our JS / CSS files for example.</p>
+<p>You must have Gulp install on your computer.</p>
+<p>Download NodeJS LTS version. If you have Linux OS, you should use your packets manager. (check this ressources : <a class="reference external" href="https://nodejs.org/en/download/package-manager/">https://nodejs.org/en/download/package-manager/</a>)</p>
+<p>Go to your terminal and type this command (You might need root permissions | sudo):</p>
+<p>npm install –global gulp-cli</p>
+<p>Then, type this command in your terminal :
+gulp -v</p>
+<p>if you see something like this :</p>
+<p>CLI version: 2.2.0 Local version: Unknown You should be good.</p>
+<p>Now, go to vittascience git repository you clone earlier using terminal. (use cd command to navigate) From this folder, type this command (You might need root permissions | sudo):
+npm install</p>
+<p>Finally, you can try our configuration files for Gulp :
+sudo gulp (gulp on windows)</p>
+<p>This command will read gulpfile.js and read all our configuration files in gulp folder to process our files. After execution, you should have a new folder in vittascience repository : prod</p>
+<p>prod is the overlay with all minified files and modifications. You must always use Gulp and upload the content of prod when you want to put the website in production.</p>
+<p>Gulp process works differently with Windows and Mac/Linux. Do it with the latter to avoid conflicts.</p>
+</div>
+<div class="section" id="get-familiar-with-git">
+<h2>Get familiar with git<a class="headerlink" href="#get-familiar-with-git" title="Permalink to this headline">¶</a></h2>
+<p>If you are contributing to the project, you should be very familiar with git. We highly recommend you to create a mini project on your own and try every set of commands in the sections of this guide.</p>
+<p>Add, commit and push
+The simplest contribution to a repository’s master branch can be done using these three commands</p>
+<p>git add file1 file2 file3 #add files you have modified - track them
+git commit -m “write here a significant message that documents well your change” #commit your change
+git push
+Note: please avoid using git add *</p>
+<p>If you run these command while being on Vittascience master branch, you’ll get this:</p>
+<p>error: You are not allowed to push code to protected branches on this project.</p>
+<p>It is important to know that you should not work on the master branch since it is protected from direct pushes through branch rules. Branch rules force developers to issue merge requests to be validated by project maintainers before integrating them into main code. You, as a developer, need to work on your own branch or your team’s branch then open a pull request (PR) to merge with master.</p>
+<p>Project owners/maintainers: rules for the branches can be set here.</p>
+<p>Create and push a branch
+git checkout -b your_branch_name #create branch
+git merge master #optional since new branches are created directly from master branch
+git push
+First push: git push -u origin your_branch_name #push your local branch to remote repository</p>
+<p>Merge others’ work into your branch
+Sometimes a team different than yours push to master their changes, you should merge their changes into your branch so you avoid conflicts.</p>
+<p>git checkout their_branch_name #go to their branch
+git pull #update their local branch
+git checkout your_branch_name #go to your branch
+git merge another_team_branch
+git push
+Pull request - Merge with develop
+It is worth noting that git request-pull is different from open new pull request on Github. We use Github website for new PR.</p>
+<p>Note: Compare: your_branch_name and Base: develop</p>
+<p>Example Pull Request</p>
+<p>Don’t forget to:</p>
+<p>Comment well your pull request
+Assign a reviewer
+Label your pull request
+The following points must be respected :</p>
+<p>A pull request should have a clear, technical and easy to understand description of the work done:
+What this PR do?
+What’s the motivation?
+Any additional Notes
+A pull request should pass all checks: Continuous Integration and conflicting files.
+A pull request’s description should contain all the tested cases/scenarios for the new feature or the fixes it carries.
+In case a pull request carries non working code, a diagnosis of the bug should be written within the description.
+Push to production
+Developers and Teams are asked to push to develop branch, that is the most advanced stable branch of the project. Once develop branch is well tested and stable, she should be pushed to master branch.</p>
+<p>The master branch reflects the current state of the website in production, so the master branch should be pushed to production with FTP (FileZilla or other). Be careful, the .htaccess, sitemap.xml, db.json and private/db_config.php files are different from master to production, and shouldn’t be pushed.</p>
+<p>Stash your changes
+If you are trying to pull changes from remote branch and this pops out “Please, commit your changes or stash them before you can merge.”</p>
+<p>Obviously this can be solved by running git commit -m “any message”. But what if you don’t really like to commit before these changes before pulling? This is where git stash comes handy.</p>
+<p>When you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.</p>
+<p>To save your current state</p>
+<p>git stash</p>
+<p>To apply back these changes</p>
+<p>git stash pop</p>
+<p>.gitignore
+Git sees every file in your working copy as one of three things:</p>
+<p>tracked - a file which has been previously staged or committed;
+untracked - a file which has not been staged or committed; or
+ignored - a file which Git has been explicitly told to ignore.
+What folders should be ignored?</p>
+<p>IDE files such as .idea and .vscode.
+Log files .log.
+Compiled source .class, .dll, .exe, .o, .so, etc…
+private/ since it is relative to every developer.
+How to tell git ignore a file or a folder?</p>
+<p>Append the folder to be ignored to the end of .gitignore using echo “folder_to_ignore/” &gt;&gt; .gitignore or any text editor of your choice.</p>
+<p>.gitkeep
+Sometimes instead of telling git to explicitly ignore a folder, you are interested to explicitly tell git to keep a folder. This comes handy when you are trying to track empty folders.</p>
+<p>Empty directories are not content. Thus, ignored by git.</p>
+<p>People who want to track empty directories in Git have created the convention of putting files called .gitkeep in these directories. The file could be called anything; Git assigns no special significance to this name.</p>
+<p>cd folder_to_keep
+touch .gitkeep</p>
+<dl>
+<dt><em>Useful links:</em></dt><dd><p><a class="reference external" href="https://help.github.com/en/articles/adding-a-file-to-a-repository-using-the-command-line">https://help.github.com/en/articles/adding-a-file-to-a-repository-using-the-command-line</a></p>
+<p><a class="reference external" href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is">https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is</a></p>
+<p><a class="reference external" href="https://help.github.com/en/articles/creating-a-pull-request-from-a-fork">https://help.github.com/en/articles/creating-a-pull-request-from-a-fork</a></p>
+<p><a class="reference external" href="https://confluence.atlassian.com/bitbucket/branching-a-repository-223217999.html">https://confluence.atlassian.com/bitbucket/branching-a-repository-223217999.html</a></p>
+<p><a class="reference external" href="https://www.atlassian.com/git/tutorials/saving-changes/gitignore">https://www.atlassian.com/git/tutorials/saving-changes/gitignore</a></p>
+</dd>
+</dl>
+</div>
+<div class="section" id="git-workflow">
+<h2>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this headline">¶</a></h2>
+<p>-Create a new branch for each project</p>
+<p>-Give clear title for important commits</p>
+<p>-If two developpers work on the same project, communicate a lot and don’t erase each other job</p>
+<p>-Don’t push your work online unless you got permission and are sure it won’t break anything</p>
+<p>-When your project is ready, make a pull request to develop branch</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">vittascience</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#to-get-the-right-tools">To get the right tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-project-environment">Setup project environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-familiar-with-git">Get familiar with git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-workflow">Git Workflow</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter">Welcome to vittascience’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, aziz dhouib.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/pages/gettingstarted.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
